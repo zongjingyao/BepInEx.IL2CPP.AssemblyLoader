@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Version>1.0.0</Version>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Il2Cppmscorlib">
+            <HintPath>..\Lib\Il2Cppmscorlib.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\Lib\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+            <HintPath>..\Lib\UnityEngine.InputLegacyModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.InputModule">
+            <HintPath>..\Lib\UnityEngine.InputModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\Lib\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+<!--    <PropertyGroup>-->
+<!--        <PostBuildEvent>xcopy "$(SolutionDir)\AssemblyLoader\bin\Debug\net6.0\AssemblyLoader.dll" "Your destination directory" /Y</PostBuildEvent>-->
+<!--    </PropertyGroup>-->
+
+</Project>

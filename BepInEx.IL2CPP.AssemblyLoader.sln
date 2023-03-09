@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BepInEx.IL2CPP.AssemblyLoader", "AssemblyLoader\AssemblyLoader.csproj", "{7BBEF1E9-52C9-4785-80B5-2B995C005299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payload", "Payload\Payload.csproj", "{BE0D6CAE-A786-434A-8304-3A6DFC87AC55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BBEF1E9-52C9-4785-80B5-2B995C005299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBEF1E9-52C9-4785-80B5-2B995C005299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBEF1E9-52C9-4785-80B5-2B995C005299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBEF1E9-52C9-4785-80B5-2B995C005299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0D6CAE-A786-434A-8304-3A6DFC87AC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0D6CAE-A786-434A-8304-3A6DFC87AC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0D6CAE-A786-434A-8304-3A6DFC87AC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0D6CAE-A786-434A-8304-3A6DFC87AC55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

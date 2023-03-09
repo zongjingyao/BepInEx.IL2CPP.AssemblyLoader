@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Il2Cppmscorlib">
+            <HintPath>..\Lib\Il2Cppmscorlib.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.Runtime">
+            <HintPath>..\Lib\Il2CppInterop.Runtime.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\Lib\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\Lib\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+<!--    <PropertyGroup>-->
+<!--        <PostBuildEvent>xcopy "$(SolutionDir)\Payload\bin\Debug\net6.0\Payload.dll" "Your destination directory" /Y</PostBuildEvent>-->
+<!--    </PropertyGroup>-->
+
+</Project>
